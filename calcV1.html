@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ma Calculatrice</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="demo_form.asp" novalidate>
+		<strong>Vos retour:</strong><input type="email" name="user_email">
+		<input type="submit">
+	</form>
+
+	<div class="container">
+		<h2>Calculatrice Méthode 1</h2>
+		<form unsubmit="return false">
+			<input type="text" id="input1" placeholder="Nb1"><br>
+			<input type="text" id="input2" placeholder="Nb2"><br>
+			<select name="Operation" id="selectsign">
+				<option class="operation" value="+">+</option>
+				<option class="operation" value="-">-</option>
+				<option class="operation" value="*">*</option>
+				<option class="operation" value="/">/</option>
+			</select>
+
+			<button>Calculer</button>
+			<button id="reinit">reinitialiser</button>
+		</form>
+		Résultat : <span id="result">?</span>
+	</div>
+
+	
+<script src="node_modules/jquery/dist/jquery.js"></script>	
+<script src="calcV1.js"></script>
+
+</body>
+</html>
+
